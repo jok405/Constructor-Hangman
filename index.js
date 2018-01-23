@@ -15,5 +15,13 @@ var theAlphabet = require('./Alphabet.js');   // The alphabet
 
 var vetTheLetter = require('./vettingLetter.js'); // Mechanism to validate letter input
 
+// ========================================= | Game Object | ==========================
 
+var game = {
+    wordcontainer : gameWords,          //import hangman words
+    remainingChances : 10,              // with every round of play
+    yourWord : null,                    // the word object
+}
+
+// ===================================== | Inclusion of Prompts | =====================
 
