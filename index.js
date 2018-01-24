@@ -18,9 +18,18 @@ var vetTheLetter = require('./vettingLetter.js'); // Mechanism to validate lette
 // ========================================= | Game Object | ==========================
 
 var game = {
-    wordcontainer : gameWords,          //import hangman words
-    remainingChances : 10,              // with every round of play
+    wordCache : gameWords,              //import hangman words
+    guessesLeft : 10,                   // with every round of play
     yourWord : null,                    // the word object
+
+    beginGame : function(){
+        this.guessesLeft = 10;
+        
+        var k = math.floor(math.random() * this.wordCache.length);
+        this.yourWord = this.wordCache[k];
+
+        console.log('Figure it out');
+    }
 }
 
 // ===================================== | Inclusion of Prompts | =====================
