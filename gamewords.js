@@ -4,6 +4,6 @@
 
 // =================================== | A word list constructor | ====================================
 
-var gameWords = ['Magnet Man', 'Hard Man', 'Top Man', 'Shadow Man', 'Spark Man', 'Snake Man', 'Gemini Man', 'Needle Man'];
+var gameWords = ['magnetman', 'hardman', 'topman', 'shadowman', 'sparkman', 'snakeman', 'geminiman', 'needleman'];
 
-module.exports = gameWords; 
+module.exports = gameWords;

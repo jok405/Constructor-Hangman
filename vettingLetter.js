@@ -7,7 +7,8 @@
 // The constructor file validating letters against the randomly chosen word.
 
 function vetTheLetter(letter, word) {
-    if(word.indexof(letter) != -1){
+ 
+    if(word.indexOf(letter) != -1){
         return true;
     }
     else{
